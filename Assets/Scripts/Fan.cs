@@ -6,8 +6,11 @@ using UnityEngine;
 public class Fan : MonoBehaviour
 {
    [SerializeField]private Transform target;
+   [SerializeField] private Joystick joystick;
    [SerializeField]private float force;
    [SerializeField]private float rotation_Speed;
+   [SerializeField] private float move_Speed;
+   [SerializeField] private float max_XPos;
 
     public bool useMouse;
 
@@ -29,18 +32,33 @@ public class Fan : MonoBehaviour
         }
         if (!useMouse)
         {
-            TouchControl();
+            JoyStickControl();
         }
-
-   }
-
-    private void TouchControl()
-    {
-        if (Input.touchCount > 0)
+        if (transform.position.x >= max_XPos)
         {
-            Touch touch = Input.GetTouch(0);
-            
+            transform.position = new Vector3(max_XPos, transform.position.y, transform.position.z);
         }
+        if (transform.position.x <= -max_XPos)
+        {
+            transform.position = new Vector3(-max_XPos, transform.position.y, transform.position.z);
+        }
+
+    }
+
+    private void JoyStickControl()
+    {
+        spriteRenderer.enabled = true;
+        float horiMove = joystick.Horizontal;
+        float vertiMove = joystick.Vertical;
+        
+        if (horiMove > 0.5f|| horiMove < -0.5f || vertiMove > 0.5f || vertiMove < -0.5f)
+        {
+            Vector3 move = new Vector3(horiMove, vertiMove, 0);
+            
+            transform.Translate(move_Speed * move * Time.deltaTime);
+        }
+
+       
     }
 
     private void MouseControls()
