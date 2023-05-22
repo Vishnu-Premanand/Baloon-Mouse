@@ -293,7 +293,7 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 2144031062}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.819917, y: 0.0000000380909}
   m_UseMotor: 0
@@ -312,12 +312,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320762103}
   m_LocalRotation: {x: -0, y: -0, z: -0.75404346, w: 0.6568245}
-  m_LocalPosition: {x: 1.6668386, y: 4.275799, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.03447479, y: -0.7827403, z: 0}
+  m_LocalScale: {x: 0.1467, y: 0.1467, z: 0.1467}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 781758961}
-  m_RootOrder: 2
+  m_Father: {fileID: 1033600292}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544729033
 GameObject:
@@ -371,9 +371,9 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 696055528}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.1967179, y: -0.00000015236357}
+  m_ConnectedAnchor: {x: 1.1967176, y: -0.00000015236354}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -390,12 +390,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544729033}
   m_LocalRotation: {x: -0, y: -0, z: -0.7651104, w: 0.6438992}
-  m_LocalPosition: {x: 1.3044811, y: 2.15964, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.08763264, y: -1.0931808, z: 0}
+  m_LocalScale: {x: 0.14670002, y: 0.14670002, z: 0.1467}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 781758961}
-  m_RootOrder: 4
+  m_Father: {fileID: 1033600292}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &696055527
 GameObject:
@@ -449,7 +449,7 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 320762104}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.9511138, y: 0.00000034281814}
   m_UseMotor: 0
@@ -468,12 +468,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696055527}
   m_LocalRotation: {x: -0, y: -0, z: -0.7725866, w: 0.6349095}
-  m_LocalPosition: {x: 1.5363812, y: 3.3336744, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.053612888, y: -0.92094994, z: 0}
+  m_LocalScale: {x: 0.14670002, y: 0.14670002, z: 0.1467}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 781758961}
-  m_RootOrder: 3
+  m_Father: {fileID: 1033600292}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &780905245
 GameObject:
@@ -508,6 +508,7 @@ MonoBehaviour:
   target: {fileID: 1033600292}
   force: 0.02
   rotation_Speed: 1.5
+  useMouse: 1
   offset: {x: 0.5, y: 0.5}
 --- !u!212 &780905247
 SpriteRenderer:
@@ -569,7 +570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780905245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.49, y: -0.1, z: 0}
+  m_LocalPosition: {x: -2.49, y: 2.12, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -605,15 +606,9 @@ Transform:
   m_LocalPosition: {x: -0.279, y: -1.41, z: 0}
   m_LocalScale: {x: 0.1467, y: 0.1467, z: 0.1467}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1620949197}
-  - {fileID: 2144031064}
-  - {fileID: 320762106}
-  - {fileID: 696055530}
-  - {fileID: 544729036}
-  - {fileID: 917193308}
-  m_Father: {fileID: 1587211826}
-  m_RootOrder: 1
+  m_Children: []
+  m_Father: {fileID: 1033600292}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &781758962
 MonoBehaviour:
@@ -636,8 +631,8 @@ MonoBehaviour:
   - {fileID: 544729036}
   - {fileID: 917193308}
   m_Bounds:
-    m_Center: {x: -0.001541853, y: -0.0043668747, z: 0}
-    m_Extent: {x: 2.397, y: 6.4006357, z: 0}
+    m_Center: {x: -0.001541853, y: -0.0043678284, z: 0}
+    m_Extent: {x: 2.3970008, y: 6.400636, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -719,12 +714,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917193307}
   m_LocalRotation: {x: -0, y: -0, z: -0.7776657, w: 0.6286781}
-  m_LocalPosition: {x: 1.1160551, y: 1.072574, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.11527473, y: -1.2526534, z: 0}
+  m_LocalScale: {x: 0.14670002, y: 0.14670002, z: 0.1467}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 781758961}
-  m_RootOrder: 5
+  m_Father: {fileID: 1033600292}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!233 &917193309
 HingeJoint2D:
@@ -739,9 +734,9 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 544729034}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.1032753, y: -0.00000012696965}
+  m_ConnectedAnchor: {x: 1.1032751, y: -0.00000012696962}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -782,6 +777,7 @@ GameObject:
   - component: {fileID: 1033600292}
   - component: {fileID: 1033600291}
   - component: {fileID: 1033600290}
+  - component: {fileID: 1033600293}
   m_Layer: 0
   m_Name: Baloon
   m_TagString: Untagged
@@ -874,10 +870,30 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1587211826}
+  - {fileID: 781758961}
+  - {fileID: 1579608297}
+  - {fileID: 1620949197}
+  - {fileID: 2144031064}
+  - {fileID: 320762106}
+  - {fileID: 696055530}
+  - {fileID: 544729036}
+  - {fileID: 917193308}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1033600293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033600289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb685b72309df06489e086349fb5dd0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max_XPos: 1.8
 --- !u!1 &1579608296
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,13 +919,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579608296}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1587211826}
-  m_RootOrder: 0
+  m_Father: {fileID: 1033600292}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!233 &1579608298
 HingeJoint2D:
@@ -956,39 +972,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!1 &1587211825
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1587211826}
-  m_Layer: 0
-  m_Name: Rope
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1587211826
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587211825}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1579608297}
-  - {fileID: 781758961}
-  m_Father: {fileID: 1033600292}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1620949194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1024,7 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 1579608299}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.0016721189, y: -0.5020683}
   m_UseMotor: 0
@@ -1059,13 +1042,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620949194}
-  m_LocalRotation: {x: 0, y: 0, z: -0.74752903, w: 0.66422915}
-  m_LocalPosition: {x: 1.9132389, y: 6.189037, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.74752903, w: 0.66422915}
+  m_LocalPosition: {x: 0.0016721189, y: -0.5020683, z: 0}
+  m_LocalScale: {x: 0.1467, y: 0.1467, z: 0.1467}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 781758961}
-  m_RootOrder: 0
+  m_Father: {fileID: 1033600292}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2144031061
 GameObject:
@@ -1119,7 +1102,7 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 1620949195}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 1.1092583, y: 0.00000015236361}
   m_UseMotor: 0
@@ -1138,10 +1121,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144031061}
   m_LocalRotation: {x: -0, y: -0, z: -0.7554534, w: 0.6552024}
-  m_LocalPosition: {x: 1.782791, y: 5.087476, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.017464578, y: -0.6636673, z: 0}
+  m_LocalScale: {x: 0.1467, y: 0.1467, z: 0.1467}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 781758961}
-  m_RootOrder: 1
+  m_Father: {fileID: 1033600292}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
